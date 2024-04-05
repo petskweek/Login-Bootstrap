@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+       .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+       .form-container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+       .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+       .form-container input[type="text"],.form-container input[type="email"],.form-container input[type="password"],.form-container input[type="tel"],.form-container input[type="address"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+       .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       .form-container button:hover {
+            background-color: #3ab7ff;
+        }
+       .form-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-container">
+            <h1>REGISTER</h1>
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/428663859_354756204066074_3389287146092800179_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHqvVoTv9ZXWfUehMBImvDGT_4iY1R-hohP_iJjVH6GiBL4eJV_xLQFp3lWDMnJuGHfwHmjy2esb510bjHov-mn&_nc_ohc=4CdexoyIs1wAb4B--iO&_nc_ht=scontent-mnl1-2.xx&oh=00_AfBA0mE3z7YA8TiKpOqhCzqsd7Jals9uXIBPaiqJHSS6MA&oe=6615806A" alt="Registration Image">
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="address" class="form-control" id="address" placeholder="Enter address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+                </div>
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>Already have an account? <a href="#">Sign In</a></p>
+                <p>Or sign up with:</p>
+                <button class="btn btn-danger"><i class="fab fa-google"></i> G SIGN UP WITH GOOGLE</button>
+                <button class="btn btn-primary"><i class="fab fa-facebook-f"></i> f SIGN UP WITH FACEBOOK</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
